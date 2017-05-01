@@ -157,7 +157,8 @@ open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
             let screenRatio = screenSize().width / screenSize().height
 
             if picRatio > screenRatio {
-                return CGSize(width: screenSize().width, height: screenSize().width / picSize.width * picSize.height)
+                //return CGSize(width: screenSize().width, height: screenSize().width / picSize.width * picSize.height)
+                return CGSize(width: screenSize().width, height: screenSize().height)
             } else {
                 return CGSize(width: screenSize().height / picSize.height * picSize.width, height: screenSize().height)
             }

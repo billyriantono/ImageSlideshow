@@ -43,9 +43,7 @@ open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
         imageView.clipsToBounds = true
         imageView.isUserInteractionEnabled = true
 
-        if !(image is KingfisherSource) {
-            setPictoCenter()
-        }
+        setPictoCenter()
 
         // scroll view configuration
         delegate = self
